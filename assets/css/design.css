@@ -1,0 +1,46 @@
+body {
+    /*background-color:#EEE !important;*/
+}
+
+/**
+** LAYOUT AND COLORS
+**/
+.card_cv {
+    /* EN TEST */
+    /*background-color:#EEE !important;*/
+    background:url("../img/bg.png") repeat-y;
+    background-size:100%;
+}
+.header {
+    padding-left:0.5rem;
+    margin-bottom:2rem;
+    color: #373a3c;
+}
+
+.bloc_titre {
+    display: table;
+    width:100%;
+    height:6em;
+    background-color: #373a3c;
+}
+
+.titre_cv {
+    display:table-cell;
+    vertical-align: middle;
+    color:#CFCFCF;
+    text-align: center;
+    font-size:2.15rem;
+}
+/**
+*   CV HEADER
+**/
+
+.cv_header {
+    display:block;
+    font-size:3rem;
+    font-weight: 900;
+}
+
+.cv_subheader {
+    display:block;
+}

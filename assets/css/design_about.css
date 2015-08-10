@@ -1,0 +1,119 @@
+body {
+    background-color:#EEE !important;
+}
+
+
+
+.nom_header {
+    margin-top: -3rem;
+    font-style: italic;
+}
+
+.prenom_header {
+    font-style: italic;
+}
+.title_header {
+    font-size: 5rem;
+}
+
+.desc_header {
+    font-size: 1.15em;
+    font-style: italic;
+}
+.desc_content {
+    font-size: 0.75em;
+}
+
+.lang {
+    padding-top:0.25rem;
+    padding-right:1rem;
+    z-index: 2;
+    color:white;
+    font-size:0.70rem;
+    display:inline-block;
+    float:right;
+}
+
+.home {
+     display: inline-block;
+    float:left;
+ }
+
+.home_icon {
+    padding-left:4rem;
+    padding-top: 2rem;
+    font-size:48px !important;
+    color:#FFF;
+}
+
+.main {
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index: -1;
+}
+
+.main > .col {
+    height:100%;
+    padding-top:5rem;
+}
+
+.bloc_menu {
+    background-color: #3E3E40 !important;
+    color:white;
+}
+
+.bloc_right {
+    background-color: #73AFB6 !important;
+    Color:white;
+}
+
+/***
+** menu
+**/
+
+
+.menu_item {
+    font-size: 2rem;
+    margin-top:3rem;
+}
+
+.menu_item > a {
+    color: white;
+    font-style: italic;
+    position:relative;
+    text-decoration: none;
+    margin-left:2rem;
+}
+
+.menu_item > a:before {
+    content: "";
+    position:absolute;
+    width:100%;
+    height:2px;
+    bottom: 0;
+    left: 0;
+    background-color:white;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.menu_item > a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+/***
+* carte about
+****/
+
+.card_about > .card-title, .card_about > .card-content {
+    color:black;
+}

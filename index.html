@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html ng-app="cvApp">
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="assets/css/materialize.min.css"/>
+    <link rel="stylesheet" href="assets/css/design.css"/>
+    <script type="application/javascript" src="assets/js/angular.js"></script>
+    <script type="application/javascript" src="assets/js/materialize.min.js"></script>
+    <script type="application/javascript" src="controller/controller.js"></script>
+</head>
+<body ng-controller="CvController">
+<div class="row main">
+    <div class="col l2">
+        &nbsp;
+    </div>
+    <div class="col l8 s12">
+        <div class="card card_cv">
+            <div class="header">
+                <span class="cv_header">{{header}}</span>
+                <span class="cv_subheader" ng-repeat="item in sub_header">{{item.content}}</span>
+            </div>
+            <div class="bloc_titre">
+                <span class="titre_cv">{{titre_cv}}</span>
+            </div>
+            <div class="content">
+                <div class="col s2">
+                    timeline left
+                </div>
+                <div class="col s8">
+                    content
+                </div>
+                <div class="col s2">
+                    timeline right
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col l2">
+        &nbsp;
+    </div>
+</div>
+</body>
+</html>
