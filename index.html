@@ -32,6 +32,7 @@
 
                         <div ng-if="projet.categorie == 'formation'" class="projet">
                             <div class="bulle_formation">{{projet.annee}}</div>
+                            <div class="timeline_fleche_formation"></div>
                             <div class="card card_formation">
                                 <div class="card-title">
                                     <span class="titre_projet">{{projet.titre}}</span>
@@ -51,6 +52,7 @@
 
                         <div ng-if="projet.categorie == 'pro'" class="projet">
                             <div class="bulle_pro">{{projet.annee}}</div>
+                            <div class="timeline_fleche_pro"></div>
                             <div class="card card_pro">
                                 <div class="card-title">
                                     <span class="titre_projet">{{projet.titre}}</span>
@@ -71,7 +73,7 @@
                     </div>
                 </div>
                 <div class="col s1 bloc_right">
-                    &nbsp;
+                    <div class="timeline_right">&nbsp;</div>
                 </div>
             </div>
             <div class="col s12 bloc_details">

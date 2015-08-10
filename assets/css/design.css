@@ -1,6 +1,6 @@
 html, body {
     /*background-color:#EEE !important;*/
-    height:100%;
+    height: 100%;
     z-index: -1;
 }
 
@@ -10,122 +10,119 @@ html, body {
 .card_cv {
     /* EN TEST */
     /*background-color:#EEE !important;*/
-    background:url("../img/bg.png") repeat-y;
-    background-size:100%;
+    background: url("../img/bg.png") repeat-y;
+    background-size: 100%;
 }
+
 .header {
-    padding-left:0.5rem;
-    margin-bottom:2rem;
+    padding-left: 0.5rem;
+    margin-bottom: 2rem;
     color: #373a3c;
 }
 
 .bloc_titre {
     display: table;
-    width:100%;
-    height:6em;
+    width: 100%;
+    height: 6em;
     background-color: #373a3c;
 }
 
 .titre_cv {
-    display:table-cell;
+    display: table-cell;
     vertical-align: middle;
-    color:#CFCFCF;
+    color: #CFCFCF;
     text-align: center;
-    font-size:2.15rem;
+    font-size: 2.15rem;
 }
 
 .content {
-    height:100%;
-    min-height:100%;
-    margin:0 auto;
+    height: 100%;
+    min-height: 100%;
+    margin: 0 auto;
 }
 
 .bloc_left {
-    height:100%;
-    min-height:100%;
     background-color: #50b9bf;
-    z-index:1;
+    z-index: 1;
 }
 
 .bloc_right {
-    top:0;
-    bottom:0;
     background-color: #373a3c;
-    position:relative;
-    z-index:1;
+    z-index: 1;
 }
 
 .bloc_details {
     background-color: #50b9bf;
 }
+
 /**
 *   CV HEADER
 **/
 
 .cv_header {
-    display:block;
-    font-size:3rem;
+    display: block;
+    font-size: 3rem;
     font-weight: 900;
 }
 
 .cv_subheader {
-    display:block;
+    display: block;
 }
-
 
 /**
 *   Projets CARD FORMATION
 **/
 .card_formation {
-    width:90%;
-    margin-top:-2.5rem;
-    margin-left:2rem;
+    width: 90%;
+    margin-left: 2rem;
+    margin-top:-3rem;
     border-top-right-radius: 0px;
     border-top-left-radius: 0px;
-    padding-bottom:5px;
+    padding-bottom: 5px;
 }
 
 .card_formation > .card-title {
-    background-color:#50b9bf;
+    background-color: #50b9bf;
     padding: 5px 10px;
 }
 
 .card-title > .titre_projet {
     /*padding-left:0.5rem;*/
-    font-size:1.15rem;
-    font-weight:600;
-    display:block;
+    font-size: 1.15rem;
+    font-weight: 600;
+    display: block;
 }
 
 .card_formation > .soustitre_projet {
     font-style: italic;
     color: #5bb7ba;
-    padding-left:0.5rem;
-    font-size:0.9rem;
-    display:block;
+    padding-left: 0.5rem;
+    font-size: 0.9rem;
+    display: block;
 }
 
 .card_formation > .description_projet {
-    display:block;
-    padding-left:0.5rem;
-    font-size:0.85rem;
-    font-style:italic;
-    color:#888888;
+    display: block;
+    padding-left: 0.5rem;
+    font-size: 0.85rem;
+    font-style: italic;
+    color: #888888;
 }
 
 hr.formation {
-    width:100%;
+    width: 100%;
     float: left;
     color: #5bb7ba;
     background-color: #5bb7ba;
-    margin-top:0px;
-    margin-bottom:0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     border-bottom-right-radius: 100%;
 }
 
 .bulle_formation {
     background-color: #50b9bf;
-    margin-left: -2.65rem;
+    margin-left: -6.15em;
+    margin-top:1rem;
     padding: 15px 10px;
     border-radius: 80px;
     width: 55px;
@@ -133,8 +130,20 @@ hr.formation {
     text-align: center;
     border: 2px solid #FFF;
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.16), 0px 2px 10px 0px rgba(0, 0, 0, 0.12);
-    position:relative;
+    position: relative;
     z-index: 999;
+}
+
+.timeline_fleche_formation {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 18px 0 18px 46px;
+    border-color: transparent transparent transparent #50b9bf;
+    position: absolute;
+    margin-left: -12px;
+    margin-top: -44px;
+
 }
 
 .projet {
@@ -146,47 +155,47 @@ hr.formation {
 */
 
 .card_pro {
-    width:90%;
-    margin-left:2.5rem;
+    width: 90%;
+    margin-left: 4.5rem;
     border-top-right-radius: 0px;
     border-top-left-radius: 0px;
-    padding-bottom:5px;
+    padding-bottom: 5px;
 }
 
 .card_pro > .card-title {
-    background-color:#373a3c;
+    background-color: #373a3c;
     padding: 5px 10px;
 }
 
 .card_pro > .soustitre_projet {
     font-style: italic;
     color: #373a3c;
-    padding-left:0.5rem;
-    font-size:0.9rem;
-    display:block;
+    padding-left: 0.5rem;
+    font-size: 0.9rem;
+    display: block;
 }
 
 .card_pro > .description_projet {
-    display:block;
-    padding-left:0.5rem;
-    font-size:0.85rem;
-    font-style:italic;
-    color:#888888;
+    display: block;
+    padding-left: 0.5rem;
+    font-size: 0.85rem;
+    font-style: italic;
+    color: #888888;
 }
 
 hr.pro {
-    width:100%;
+    width: 100%;
     float: left;
     color: #373a3c;
     background-color: #373a3c;
-    margin-top:0px;
-    margin-bottom:0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     border-bottom-right-radius: 100%;
 }
 
 .bulle_pro {
     background-color: #373a3c;
-    margin-right: -2.65rem;
+    margin-right: -6.15rem;
     padding: 15px 10px;
     border-radius: 80px;
     width: 55px;
@@ -196,10 +205,20 @@ hr.pro {
     margin-top: -1rem;
     border: 2px solid #FFF;
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.16), 0px 2px 10px 0px rgba(0, 0, 0, 0.12);
-    position:relative;
+    position: relative;
     z-index: 999;
 }
 
+.timeline_fleche_pro {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 18px 46px 18px 0px;
+    border-color: transparent #373a3c transparent;
+    position: absolute;
+    margin-left:65.4rem;
+
+}
 
 /**
 *   COMPETENCES
@@ -214,11 +233,11 @@ hr.pro {
 }
 
 .card_pro > .card-content, .card_formation > .card-content {
-    padding-top:9px;
+    padding-top: 9px;
 }
 
 .liste_competence_pro {
-    color:#373a3c;
+    color: #373a3c;
     list-style-position: inside;
 }
 
@@ -237,5 +256,5 @@ hr.pro {
 */
 
 .collapsed {
-    margin-bottom:0;
+    margin-bottom: 0;
 }
