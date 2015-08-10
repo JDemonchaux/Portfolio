@@ -1,5 +1,7 @@
-body {
+html, body {
     /*background-color:#EEE !important;*/
+    height:100%;
+    z-index: -1;
 }
 
 /**
@@ -31,6 +33,31 @@ body {
     text-align: center;
     font-size:2.15rem;
 }
+
+.content {
+    height:100%;
+    min-height:100%;
+    margin:0 auto;
+}
+
+.bloc_left {
+    height:100%;
+    min-height:100%;
+    background-color: #50b9bf;
+    z-index:1;
+}
+
+.bloc_right {
+    top:0;
+    bottom:0;
+    background-color: #373a3c;
+    position:relative;
+    z-index:1;
+}
+
+.bloc_details {
+    background-color: #50b9bf;
+}
 /**
 *   CV HEADER
 **/
@@ -43,4 +70,172 @@ body {
 
 .cv_subheader {
     display:block;
+}
+
+
+/**
+*   Projets CARD FORMATION
+**/
+.card_formation {
+    width:90%;
+    margin-top:-2.5rem;
+    margin-left:2rem;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    padding-bottom:5px;
+}
+
+.card_formation > .card-title {
+    background-color:#50b9bf;
+    padding: 5px 10px;
+}
+
+.card-title > .titre_projet {
+    /*padding-left:0.5rem;*/
+    font-size:1.15rem;
+    font-weight:600;
+    display:block;
+}
+
+.card_formation > .soustitre_projet {
+    font-style: italic;
+    color: #5bb7ba;
+    padding-left:0.5rem;
+    font-size:0.9rem;
+    display:block;
+}
+
+.card_formation > .description_projet {
+    display:block;
+    padding-left:0.5rem;
+    font-size:0.85rem;
+    font-style:italic;
+    color:#888888;
+}
+
+hr.formation {
+    width:100%;
+    float: left;
+    color: #5bb7ba;
+    background-color: #5bb7ba;
+    margin-top:0px;
+    margin-bottom:0px;
+    border-bottom-right-radius: 100%;
+}
+
+.bulle_formation {
+    background-color: #50b9bf;
+    margin-left: -2.65rem;
+    padding: 15px 10px;
+    border-radius: 80px;
+    width: 55px;
+    color: #FFF;
+    text-align: center;
+    border: 2px solid #FFF;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.16), 0px 2px 10px 0px rgba(0, 0, 0, 0.12);
+    position:relative;
+    z-index: 999;
+}
+
+.projet {
+    margin-bottom: 2rem;
+}
+
+/**
+* projet CARD PRO
+*/
+
+.card_pro {
+    width:90%;
+    margin-left:2.5rem;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    padding-bottom:5px;
+}
+
+.card_pro > .card-title {
+    background-color:#373a3c;
+    padding: 5px 10px;
+}
+
+.card_pro > .soustitre_projet {
+    font-style: italic;
+    color: #373a3c;
+    padding-left:0.5rem;
+    font-size:0.9rem;
+    display:block;
+}
+
+.card_pro > .description_projet {
+    display:block;
+    padding-left:0.5rem;
+    font-size:0.85rem;
+    font-style:italic;
+    color:#888888;
+}
+
+hr.pro {
+    width:100%;
+    float: left;
+    color: #373a3c;
+    background-color: #373a3c;
+    margin-top:0px;
+    margin-bottom:0px;
+    border-bottom-right-radius: 100%;
+}
+
+.bulle_pro {
+    background-color: #373a3c;
+    margin-right: -2.65rem;
+    padding: 15px 10px;
+    border-radius: 80px;
+    width: 55px;
+    color: #FFF;
+    text-align: center;
+    float: right;
+    margin-top: -1rem;
+    border: 2px solid #FFF;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.16), 0px 2px 10px 0px rgba(0, 0, 0, 0.12);
+    position:relative;
+    z-index: 999;
+}
+
+
+/**
+*   COMPETENCES
+**/
+.titre_competence {
+    color: #7F7F7F;
+    text-align: center;
+    text-decoration: underline;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.card_pro > .card-content, .card_formation > .card-content {
+    padding-top:9px;
+}
+
+.liste_competence_pro {
+    color:#373a3c;
+    list-style-position: inside;
+}
+
+.liste_competence_formation {
+    color: #50b9bf;
+    list-style-position: inside;
+}
+
+.liste_competence_pro > span, .liste_competence_formation > span {
+    color: #7F7F7F;
+    font-size: 12px;
+}
+
+/**
+* HELPERS
+*/
+
+.collapsed {
+    margin-bottom:0;
 }

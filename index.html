@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="assets/css/materialize.min.css"/>
     <link rel="stylesheet" href="assets/css/design.css"/>
     <script type="application/javascript" src="assets/js/angular.js"></script>
+    <script type="application/javascript" src="assets/js/jquery.js"></script>
     <script type="application/javascript" src="assets/js/materialize.min.js"></script>
     <script type="application/javascript" src="controller/controller.js"></script>
 </head>
@@ -22,16 +23,59 @@
             <div class="bloc_titre">
                 <span class="titre_cv">{{titre_cv}}</span>
             </div>
-            <div class="content">
-                <div class="col s2">
-                    timeline left
+            <div class="row collapsed content">
+                <div class="col s1 bloc_left">
+                    &nbsp;
                 </div>
-                <div class="col s8">
-                    content
+                <div class="col s10">
+                    <div ng-repeat="projet in projets | orderBy: ['-annee', '-mois']">
+
+                        <div ng-if="projet.categorie == 'formation'" class="projet">
+                            <div class="bulle_formation">{{projet.annee}}</div>
+                            <div class="card card_formation">
+                                <div class="card-title">
+                                    <span class="titre_projet">{{projet.titre}}</span>
+                                </div>
+                                <span class="soustitre_projet" ng-if="projet.soustitre">{{projet.soustitre}} - {{projet.lieu}}</span>
+                                <hr class="formation"/>
+                                <span class="description_projet"
+                                      ng-if="projet.description">{{projet.description}}</span>
+                                <div class="card-content" ng-if="projet.competences">
+                                    <div class="col s4" ng-repeat="competence in projet.competences">
+                                        <span class="titre_competence">{{competence.categorie}}</span>
+                                        <li class="liste_competence_formation" ng-repeat="item in competence.items"><span>{{item.content}}</span></li>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div ng-if="projet.categorie == 'pro'" class="projet">
+                            <div class="bulle_pro">{{projet.annee}}</div>
+                            <div class="card card_pro">
+                                <div class="card-title">
+                                    <span class="titre_projet">{{projet.titre}}</span>
+                                </div>
+                                <span class="soustitre_projet" ng-if="projet.soustitre">{{projet.soustitre}} - {{projet.lieu}}</span>
+                                <hr class="pro"/>
+                                <span class="description_projet"
+                                      ng-if="projet.description">{{projet.description}}</span>
+                                <div class="card-content" ng-if="projet.competences">
+                                    <div class="col s4" ng-repeat="competence in projet.competences">
+                                        <span class="titre_competence">{{competence.categorie}}</span>
+                                        <li class="liste_competence_pro" ng-repeat="item in competence.items"><span>{{item.content}}</span></li>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
-                <div class="col s2">
-                    timeline right
+                <div class="col s1 bloc_right">
+                    &nbsp;
                 </div>
+            </div>
+            <div class="col s12 bloc_details">
+                <p>blablablablabla Francine, blablablablab</p>
             </div>
         </div>
     </div>
@@ -41,3 +85,15 @@
 </div>
 </body>
 </html>
+<script>
+    $(document).ready(function () {
+
+        function setFriseHeight() {
+            var height = $(".content").height();
+            $('.bloc_left').css("height", height);
+            $('.bloc_right').css("height", height);
+        };
+
+        setFriseHeight();
+    });
+</script>
